@@ -8,7 +8,17 @@
 </head>
 <body>
     <div class="login-container">
-        
+        <h1>Iniciar Sesión</h1>
+        <form action="/login" method="post">
+            <label for="tipo">Tipo de usuario:</label>
+            <select name="tipo" id="tipo">
+                <option value="estudiante">Estudiante Universitario</option>
+                <option value="profesor">Profesor</option>
+            </select>
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
     </div>
 </body>
 </html>
