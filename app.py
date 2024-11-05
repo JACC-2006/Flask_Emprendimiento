@@ -3,7 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 # from flask_sqlalchemy import SQLAlchemy
 #
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 app.secret_key = 'tu_clave_secreta'
 #
 # username = "prueba"
