@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect, flash, session
+from flask import Flask, render_template, Response, url_for, request, redirect, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 # from flask_sqlalchemy import SQLAlchemy
